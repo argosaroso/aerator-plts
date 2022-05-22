@@ -1,0 +1,18 @@
+// Download from Arduino IDE Library Manager
+  1. Open Arduino IDE
+  2. Go to Sketch > Include Library > Manage libraries
+  3. Search DallasTemperature on Library Manager > Install lastest version
+  4. Usually Library Manager will give recommendation to Install OneWire
+  5. If you don't get any recommendation then Search OneWire on Library Manager > Install lastest version
+  6. Restart Arduino IDE
+  
+// Upload Library from .Zip
+  1. Open Arduino 
+  2. Go to Sketch > Include Library > Add .Zip Library
+  3. Search your downloaded .Zip files
+  4. Restart Arduino IDE
+
+// Install Library from File Explorer
+  1. Go to C:\Users\%Yourusername%\Documents\Arduino\libraries
+  2. Extract .Zip File
+  3. Restart Arduino IDE
