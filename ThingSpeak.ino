@@ -21,7 +21,7 @@ const char * myWriteAPIKey = "YourwriteAPIKey";            // Write API Key
 #define ONE_WIRE_BUS 2 //D4 on NodeMCU GPIO02
 #define sensor 2
 OneWire oneWire(ONE_WIRE_BUS);
-DallasTemperature Suhu(&oneWire);
+DallasTemperature Tmp(&oneWire);
 
 float t;
 
@@ -41,7 +41,7 @@ void setup()
 {
   pinMode(LED,OUTPUT);
   Serial.begin(9600);
-  Suhu.begin();
+  Tmp.begin();
   delay(10);
   
   // Connect to WiFi network
@@ -52,8 +52,8 @@ void setup()
 void loop()
 {
   // DS18B20 Value
-  Suhu.requestTemperatures();
-  t = Suhu.getTempCByIndex(0);
+  Tmp.requestTemperatures();
+  t = Tmp.getTempCByIndex(0);
   // Print DS18B20 on Serial Monitor
   Serial.print("Temperature: ");
   Serial.print(t);                 
